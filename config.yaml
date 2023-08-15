@@ -1,0 +1,68 @@
+generateSourceCodeOnly: true
+templateDir: my_custom_templates
+files:
+  README.md: { }
+  LICENSE: { }
+  pubspec.yaml: { }
+  .gitignore: { }
+  analysis_options.yaml: {}
+  lib/kinde_sdk.dart:
+    destinationFilename: lib/kinde_flutter_sdk.dart
+  lib/kinde_api.dart:
+    destinationFilename: lib/kinde_api.dart
+  lib/src/auth_config.dart:
+    destinationFilename: lib/src/auth_config.dart
+  lib/src/api.dart:
+    destinationFilename: lib/src/api.dart
+  lib/src/kinde_error.dart:
+    destinationFilename: lib/src/kinde_error.dart
+  lib/src/kinde_flutter_sdk.dart:
+    destinationFilename: lib/src/kinde_flutter_sdk.dart
+  lib/src/keys/keys.dart:
+    destinationFilename: lib/src/keys/keys.dart
+  lib/src/keys/keys_api.dart:
+    destinationFilename: lib/src/keys/keys_api.dart
+  lib/src/model/token_type.dart:
+    destinationFilename: lib/src/model/token_type.dart
+  lib/src/model/auth_flow_type.dart:
+    destinationFilename: lib/src/model/auth_flow_type.dart
+  lib/src/model/claim/claim.dart:
+    destinationFilename: lib/src/model/claim/claim.dart
+  lib/src/model/claim/claim_organization.dart:
+    destinationFilename: lib/src/model/claim/claim_organization.dart
+  lib/src/model/claim/claim_organizations.dart:
+    destinationFilename: lib/src/model/claim/claim_organizations.dart
+  lib/src/model/claim/claim_permission.dart:
+    destinationFilename: lib/src/model/claim/claim_permission.dart
+  lib/src/model/claim/claim_permissions.dart:
+    destinationFilename: lib/src/model/claim/claim_permissions.dart
+  lib/src/model/claim/flag.dart:
+    destinationFilename: lib/src/model/claim/flag.dart
+  lib/src/model/claim/user_details.dart:
+    destinationFilename: lib/src/model/claim/user_details.dart
+  lib/src/store/store.dart:
+    destinationFilename: lib/src/store/store.dart
+  lib/src/token/auth_state.dart:
+    destinationFilename: lib/src/token/auth_state.dart
+  lib/src/token/token_api.dart:
+    destinationFilename: lib/src/token/token_api.dart
+  lib/src/token/token_utils.dart:
+    destinationFilename: lib/src/token/token_utils.dart
+  android/build.gradle:
+    destinationFilename: android/build.gradle
+  android/settings.gradle:
+    destinationFilename: android/settings.gradle
+  android/.gitignore:
+    destinationFilename: android/.gitignore
+  android/src/main/AndroidManifest.xml:
+    destinationFilename: android/src/main/AndroidManifest.xml
+  android/src/main/kotlin/com/kinde/kinde_flutter_sdk/KindeFlutterSdkPlugin.kt:
+    destinationFilename: android/src/main/kotlin/com/kinde/kinde_flutter_sdk/KindeFlutterSdkPlugin.kt
+  ios/.gitignore:
+    destinationFilename: ios/.gitignore
+  ios/kinde_flutter_sdk.podspec:
+    destinationFilename: ios/kinde_flutter_sdk.podspec
+  ios/Classes/KindeFlutterSdkPlugin.swift:
+    destinationFilename: ios/Classes/KindeFlutterSdkPlugin.swift
+  ios/Assets/.gitkeep:
+    destinationFilename: ios/Assets/.gitkeep
