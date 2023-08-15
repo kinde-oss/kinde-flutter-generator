@@ -19,17 +19,17 @@ Please make sure Java 11 is installed (Tips: run java -version to check the vers
 
 To generate API please run:
 ```
-java -jar cli/openapi-generator-cli.jar generate -i https://kinde.com/api/kinde-mgmt-api-specs.yaml -g dart-dio --additional-properties=pubName=kinde_api -o kinde-api/ --enable-post-process-file
+java -jar cli/openapi-generator-cli.jar generate -i https://kinde.com/api/kinde-mgmt-api-specs.yaml -g dart-dio --additional-properties=pubName=kinde_flutter_sdk -o kinde-flutter-sdk/ -c config.yaml --enable-post-process-file
 ```
 ---
 
-Change the current directory to the newly created `kinde-api` folder:
+Change the current directory to the newly created `kinde-flutter-sdk` folder:
 ```
-cd kinde-api
+cd kinde-flutter-sdk
 ```
 ---
 
-Gets all the dependencies for `kinde-api` packages
+Gets all the dependencies for `kinde-flutter-sdk` packages
 ```
 flutter packages get
 ```
