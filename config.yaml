@@ -48,6 +48,8 @@ files:
     destinationFilename: lib/src/token/token_api.dart
   lib/src/token/token_utils.dart:
     destinationFilename: lib/src/token/token_utils.dart
+  lib/src/token/refresh_token_interceptor.dart:
+    destinationFilename: lib/src/token/refresh_token_interceptor.dart
   android/build.gradle:
     destinationFilename: android/build.gradle
   android/settings.gradle:
