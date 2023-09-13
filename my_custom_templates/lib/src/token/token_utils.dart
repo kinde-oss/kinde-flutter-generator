@@ -87,21 +87,21 @@ mixin TokenUtils implements ClaimApi {
   @override
   bool? getBooleanFlag({required String code, bool? defaultValue}) {
     return getFlag(
-            code: code, defaultValue: defaultValue, type: FlagType.bool)
+        code: code, defaultValue: defaultValue, type: FlagType.bool)
         ?.value as bool?;
   }
 
   @override
   String? getStringFlag({required String code, String? defaultValue}) {
     return getFlag(
-            code: code, defaultValue: defaultValue, type: FlagType.string)
+        code: code, defaultValue: defaultValue, type: FlagType.string)
         ?.value as String?;
   }
 
   @override
   int? getIntegerFlag({required String code, int? defaultValue}) {
     return getFlag(
-            code: code, defaultValue: defaultValue, type: FlagType.integer)
+        code: code, defaultValue: defaultValue, type: FlagType.integer)
         ?.value as int?;
   }
 
