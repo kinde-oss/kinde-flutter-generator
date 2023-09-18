@@ -1,4 +1,5 @@
-generateSourceCodeOnly: true
+apiTests: false
+modelTests: false
 templateDir: my_custom_templates
 files:
   README.md: { }
@@ -68,3 +69,157 @@ files:
     destinationFilename: ios/Classes/KindeFlutterSdkPlugin.swift
   ios/Assets/.gitkeep:
     destinationFilename: ios/Assets/.gitkeep
+  test/add_organization_users_request_test.dart:
+    destinationFilename: test/add_organization_users_request_test.dart
+  test/add_organization_users_request_users_inner_test.dart:
+    destinationFilename: test/add_organization_users_request_users_inner_test.dart
+  test/add_organization_users_response_test.dart:
+    destinationFilename: test/add_organization_users_response_test.dart
+  test/api_result_test.dart:
+    destinationFilename: test/api_result_test.dart
+  test/application_test.dart:
+    destinationFilename: test/application_test.dart
+  test/business_api_test.dart:
+    destinationFilename: test/business_api_test.dart
+  test/callbacks_api_test.dart:
+    destinationFilename: test/callbacks_api_test.dart
+  test/connected_apps_access_token_test.dart:
+    destinationFilename: test/connected_apps_access_token_test.dart
+  test/connected_apps_api_test.dart:
+    destinationFilename: test/connected_apps_api_test.dart
+  test/connected_apps_auth_url_test.dart:
+    destinationFilename: test/connected_apps_auth_url_test.dart
+  test/create_feature_flag_request_test.dart:
+    destinationFilename: test/create_feature_flag_request_test.dart
+  test/create_organization_request_test.dart:
+    destinationFilename: test/create_organization_request_test.dart
+  test/create_organization_response_organization_test.dart:
+    destinationFilename: test/create_organization_response_organization_test.dart
+  test/create_organization_response_test.dart:
+    destinationFilename: test/create_organization_response_test.dart
+  test/create_organization_user_role_request_test.dart:
+    destinationFilename: test/create_organization_user_role_request_test.dart
+  test/create_permission_request_test.dart:
+    destinationFilename: test/create_permission_request_test.dart
+  test/create_role_request_test.dart:
+    destinationFilename: test/create_role_request_test.dart
+  test/create_subscriber_success_response_subscriber_test.dart:
+    destinationFilename: test/create_subscriber_success_response_subscriber_test.dart
+  test/create_subscriber_success_response_test.dart:
+    destinationFilename: test/create_subscriber_success_response_test.dart
+  test/create_user_request_identities_inner_details_test.dart:
+    destinationFilename: test/create_user_request_identities_inner_details_test.dart
+  test/create_user_request_identities_inner_test.dart:
+    destinationFilename: test/create_user_request_identities_inner_test.dart
+  test/create_user_request_profile_test.dart:
+    destinationFilename: test/create_user_request_profile_test.dart
+  test/create_user_request_test.dart:
+    destinationFilename: test/create_user_request_test.dart
+  test/create_user_response_test.dart:
+    destinationFilename: test/create_user_response_test.dart
+  test/environments_api_test.dart:
+    destinationFilename: test/environments_api_test.dart
+  test/error_response_test.dart:
+    destinationFilename: test/error_response_test.dart
+  test/error_test.dart:
+    destinationFilename: test/error_test.dart
+  test/feature_flags_api_test.dart:
+    destinationFilename: test/feature_flags_api_test.dart
+  test/get_applications_response_test.dart:
+    destinationFilename: test/get_applications_response_test.dart
+  test/get_environment_feature_flags_response_test.dart:
+    destinationFilename: test/get_environment_feature_flags_response_test.dart
+  test/get_organization_feature_flags_response_feature_flags_value_test.dart:
+    destinationFilename: test/get_organization_feature_flags_response_feature_flags_value_test.dart
+  test/get_organization_feature_flags_response_test.dart:
+    destinationFilename: test/get_organization_feature_flags_response_test.dart
+  test/get_organization_users_response_test.dart:
+    destinationFilename: test/get_organization_users_response_test.dart
+  test/get_organizations_response_test.dart:
+    destinationFilename: test/get_organizations_response_test.dart
+  test/get_organizations_user_roles_response_test.dart:
+    destinationFilename: test/get_organizations_user_roles_response_test.dart
+  test/get_redirect_callback_urls_response_test.dart:
+    destinationFilename: test/get_redirect_callback_urls_response_test.dart
+  test/get_roles_response_test.dart:
+    destinationFilename: test/get_roles_response_test.dart
+  test/get_subscriber_response_test.dart:
+    destinationFilename: test/get_subscriber_response_test.dart
+  test/get_subscribers_response_test.dart:
+    destinationFilename: test/get_subscribers_response_test.dart
+  test/industries_api_test.dart:
+    destinationFilename: test/industries_api_test.dart
+  test/kinde_flutter_sdk_test.dart:
+    destinationFilename: test/kinde_flutter_sdk_test.dart
+  test/mock_channels.dart:
+    destinationFilename: test/mock_channels.dart
+  test/o_auth_api_test.dart:
+    destinationFilename: test/o_auth_api_test.dart
+  test/organization_test.dart:
+    destinationFilename: test/organization_test.dart
+  test/organization_user_role_test.dart:
+    destinationFilename: test/organization_user_role_test.dart
+  test/organization_user_test.dart:
+    destinationFilename: test/organization_user_test.dart
+  test/organizations_api_test.dart:
+    destinationFilename: test/organizations_api_test.dart
+  test/permissions_api_test.dart:
+    destinationFilename: test/permissions_api_test.dart
+  test/permissions_test.dart:
+    destinationFilename: test/permissions_test.dart
+  test/redirect_callback_urls_test.dart:
+    destinationFilename: test/redirect_callback_urls_test.dart
+  test/replace_redirect_callback_urls_request_test.dart:
+    destinationFilename: test/replace_redirect_callback_urls_request_test.dart
+  test/role_test.dart:
+    destinationFilename: test/role_test.dart
+  test/roles_api_test.dart:
+    destinationFilename: test/roles_api_test.dart
+  test/roles_test.dart:
+    destinationFilename: test/roles_test.dart
+  test/subscriber_test.dart:
+    destinationFilename: test/subscriber_test.dart
+  test/subscribers_api_test.dart:
+    destinationFilename: test/subscribers_api_test.dart
+  test/subscribers_subscriber_test.dart:
+    destinationFilename: test/subscribers_subscriber_test.dart
+  test/success_response_test.dart:
+    destinationFilename: test/success_response_test.dart
+  test/timezones_api_test.dart:
+    destinationFilename: test/timezones_api_test.dart
+  test/update_environement_feature_flag_override_request_test.dart:
+    destinationFilename: test/update_environement_feature_flag_override_request_test.dart
+  test/update_organization_request_test.dart:
+    destinationFilename: test/update_organization_request_test.dart
+  test/update_organization_users_request_test.dart:
+    destinationFilename: test/update_organization_users_request_test.dart
+  test/update_organization_users_request_users_inner_test.dart:
+    destinationFilename: test/update_organization_users_request_users_inner_test.dart
+  test/update_organization_users_response_test.dart:
+    destinationFilename: test/update_organization_users_response_test.dart
+  test/update_role_permissions_request_permissions_inner_test.dart:
+    destinationFilename: test/update_role_permissions_request_permissions_inner_test.dart
+  test/update_role_permissions_request_test.dart:
+    destinationFilename: test/update_role_permissions_request_test.dart
+  test/update_role_permissions_response_test.dart:
+    destinationFilename: test/update_role_permissions_response_test.dart
+  test/update_roles_request_test.dart:
+    destinationFilename: test/update_roles_request_test.dart
+  test/update_user_request_test.dart:
+    destinationFilename: test/update_user_request_test.dart
+  test/user_identity_result_test.dart:
+    destinationFilename: test/user_identity_result_test.dart
+  test/user_identity_test.dart:
+    destinationFilename: test/user_identity_test.dart
+  test/user_profile_test.dart:
+    destinationFilename: test/user_profile_test.dart
+  test/user_profile_v2_test.dart:
+    destinationFilename: test/user_profile_v2_test.dart
+  test/user_test.dart:
+    destinationFilename: test/user_test.dart
+  test/users_api_test.dart:
+    destinationFilename: test/users_api_test.dart
+  test/users_response_test.dart:
+    destinationFilename: test/users_response_test.dart
+  test/test_helpers/dio_mock.dart:
+    destinationFilename: test/test_helpers/dio_mock.dart
