@@ -1,1 +1,0 @@
-enum TokenType { idToken, accessToken }
