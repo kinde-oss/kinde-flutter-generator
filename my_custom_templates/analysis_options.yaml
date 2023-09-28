@@ -1,11 +1,6 @@
 analyzer:
-  language:
-    strict-inference: true
-    strict-raw-types: true
-  strong-mode:
-    implicit-dynamic: true
-    implicit-casts: true
   exclude:
     - test/*.dart
   errors:
     deprecated_member_use_from_same_package: ignore
+    unused_local_variable: ignore

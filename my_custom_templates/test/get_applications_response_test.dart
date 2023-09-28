@@ -42,13 +42,13 @@ void main() {
       final message = instance.applications;
       expect(message, isA<ListBuilder<Applications>>());
       expect(message.length, isZero);
-      ListBuilder<Applications> _organizations = ListBuilder<Applications>();
+      ListBuilder<Applications> organizations = ListBuilder<Applications>();
       var app = Applications((builder) {
         builder.name = 'name';
         builder.id = 'id';
       });
-      _organizations.add(app);
-      instance.applications = _organizations;
+      organizations.add(app);
+      instance.applications = organizations;
       final result = instance.build();
       expect(result, isA<GetApplicationsResponse>());
       expect(result.applications, isA<BuiltList<Applications>?>());

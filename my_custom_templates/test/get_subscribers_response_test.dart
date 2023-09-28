@@ -39,8 +39,8 @@ void main() {
       // TODO
       final subscribers = instance.subscribers;
       expect(subscribers.length, isZero);
-      SubscribersSubscriber _subscriberSubscriber = SubscribersSubscriber();
-      instance.subscribers.add(_subscriberSubscriber);
+      SubscribersSubscriber subscriberSubscriber = SubscribersSubscriber();
+      instance.subscribers.add(subscriberSubscriber);
       final result = instance.build();
       expect(result, isA<GetSubscribersResponse>());
       expect(result.subscribers, isA<BuiltList<SubscribersSubscriber>?>());

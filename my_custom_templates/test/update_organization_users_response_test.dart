@@ -31,7 +31,7 @@ void main() {
       final result = instance.build();
       expect(result, isA<UpdateOrganizationUsersResponse>());
       expect(result.usersAdded, isNotNull);
-      expect(result?.usersAdded, isA<BuiltList<String>>());
+      expect(result.usersAdded, isA<BuiltList<String>>());
       expect(result.usersAdded, contains('user1'));
       expect(result.usersAdded, contains('user2'));
     });
@@ -46,7 +46,7 @@ void main() {
       final result = instance.build();
       expect(result, isA<UpdateOrganizationUsersResponse>());
       expect(result.usersUpdated, isNotNull);
-      expect(result?.usersUpdated, isA<BuiltList<String>>());
+      expect(result.usersUpdated, isA<BuiltList<String>>());
       expect(result.usersUpdated, contains('user1'));
       expect(result.usersUpdated, contains('user2'));
     });
@@ -61,7 +61,7 @@ void main() {
       final result = instance.build();
       expect(result, isA<UpdateOrganizationUsersResponse>());
       expect(result.usersRemoved, isNotNull);
-      expect(result?.usersRemoved, isA<BuiltList<String>>());
+      expect(result.usersRemoved, isA<BuiltList<String>>());
       expect(result.usersRemoved, contains('user1'));
       expect(result.usersRemoved, contains('user2'));
     });

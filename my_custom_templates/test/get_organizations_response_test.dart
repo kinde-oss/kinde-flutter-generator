@@ -41,8 +41,8 @@ void main() {
       final organizations = instance.organizations;
       expect(organizations, isA<ListBuilder<Organization>>());
       expect(organizations.length, isZero);
-      Organization _organization = Organization();
-      instance.organizations.add(_organization);
+      Organization organization = Organization();
+      instance.organizations.add(organization);
       final result = instance.build();
       expect(result, isA<GetOrganizationsResponse>());
       expect(result.organizations, isA<BuiltList<Organization>>());

@@ -14,8 +14,8 @@ void main() {
       // TODO
       final redirectUrls = instance.redirectUrls;
       expect(redirectUrls.length, isZero);
-      RedirectCallbackUrls _redirectCallbackUrls = RedirectCallbackUrls();
-      instance.redirectUrls.add(_redirectCallbackUrls);
+      RedirectCallbackUrls redirectCallbackUrls = RedirectCallbackUrls();
+      instance.redirectUrls.add(redirectCallbackUrls);
       final result = instance.build();
       expect(result, isA<GetRedirectCallbackUrlsResponse>());
       expect(result.redirectUrls, isA<BuiltList<RedirectCallbackUrls>?>());

@@ -14,8 +14,8 @@ void main() {
       final errors = instance.errors;
       expect(errors, isA<ListBuilder<Error>>());
       expect(errors.length, isZero);
-      Error _error = Error();
-      instance.errors.add(_error);
+      Error error = Error();
+      instance.errors.add(error);
       final result = instance.build();
       expect(result, isA<ErrorResponse>());
       expect(result.errors, isA<BuiltList<Error>?>());

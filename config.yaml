@@ -7,6 +7,7 @@ files:
   pubspec.yaml: { }
   .gitignore: { }
   analysis_options.yaml: {}
+  CHANGELOG.md: {}
   lib/kinde_sdk.dart:
     destinationFilename: lib/kinde_flutter_sdk.dart
   lib/kinde_api.dart:

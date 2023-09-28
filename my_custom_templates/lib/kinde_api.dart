@@ -3,13 +3,6 @@
 //
 
 export 'package:kinde_flutter_sdk/src/api.dart';
-export 'package:kinde_flutter_sdk/src/auth/api_key_auth.dart';
-export 'package:kinde_flutter_sdk/src/auth/basic_auth.dart';
-export 'package:kinde_flutter_sdk/src/auth/bearer_auth.dart';
-export 'package:kinde_flutter_sdk/src/auth/oauth.dart';
-export 'package:kinde_flutter_sdk/src/serializers.dart';
-export 'package:kinde_flutter_sdk/src/model/date.dart';
-
 export 'package:kinde_flutter_sdk/src/api/applications_api.dart';
 export 'package:kinde_flutter_sdk/src/api/business_api.dart';
 export 'package:kinde_flutter_sdk/src/api/callbacks_api.dart';
@@ -24,7 +17,10 @@ export 'package:kinde_flutter_sdk/src/api/roles_api.dart';
 export 'package:kinde_flutter_sdk/src/api/subscribers_api.dart';
 export 'package:kinde_flutter_sdk/src/api/timezones_api.dart';
 export 'package:kinde_flutter_sdk/src/api/users_api.dart';
-
+export 'package:kinde_flutter_sdk/src/auth/api_key_auth.dart';
+export 'package:kinde_flutter_sdk/src/auth/basic_auth.dart';
+export 'package:kinde_flutter_sdk/src/auth/bearer_auth.dart';
+export 'package:kinde_flutter_sdk/src/auth/oauth.dart';
 export 'package:kinde_flutter_sdk/src/model/add_organization_users_request.dart';
 export 'package:kinde_flutter_sdk/src/model/add_organization_users_request_users_inner.dart';
 export 'package:kinde_flutter_sdk/src/model/add_organization_users_response.dart';
@@ -49,6 +45,7 @@ export 'package:kinde_flutter_sdk/src/model/create_user_request_identities_inner
 export 'package:kinde_flutter_sdk/src/model/create_user_request_identities_inner_details.dart';
 export 'package:kinde_flutter_sdk/src/model/create_user_request_profile.dart';
 export 'package:kinde_flutter_sdk/src/model/create_user_response.dart';
+export 'package:kinde_flutter_sdk/src/model/date.dart';
 export 'package:kinde_flutter_sdk/src/model/error.dart';
 export 'package:kinde_flutter_sdk/src/model/error_response.dart';
 export 'package:kinde_flutter_sdk/src/model/get_application_response.dart';
@@ -92,3 +89,4 @@ export 'package:kinde_flutter_sdk/src/model/user_identity_result.dart';
 export 'package:kinde_flutter_sdk/src/model/user_profile.dart';
 export 'package:kinde_flutter_sdk/src/model/user_profile_v2.dart';
 export 'package:kinde_flutter_sdk/src/model/users_response.dart';
+export 'package:kinde_flutter_sdk/src/serializers.dart';

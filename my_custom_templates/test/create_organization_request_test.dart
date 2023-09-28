@@ -1,6 +1,5 @@
 import 'package:test/test.dart';
 import 'package:kinde_flutter_sdk/kinde_api.dart';
-import 'package:source_maps/builder.dart';
 import 'package:built_collection/built_collection.dart';
 
 // tests for CreateOrganizationRequest
