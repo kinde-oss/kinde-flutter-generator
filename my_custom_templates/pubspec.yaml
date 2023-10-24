@@ -1,18 +1,18 @@
 name: kinde_flutter_sdk
 description: The Kinde SDK For Flutter.
-version: 0.0.1
-homepage:
+version: 1.0.0
+homepage: https://github.com/kinde-oss/kinde-flutter-sdk
 
 environment:
   sdk: '>=2.15.0 <4.0.0'
-  flutter: ">=2.5.0"
+  flutter: '>=2.5.0'
 
 dependencies:
   flutter:
     sdk: flutter
 
   pubspec_parse: ^1.2.1
-  flutter_appauth: 6.0.1
+  flutter_appauth: ^6.0.1
   flutter_custom_tabs: ^1.0.4
   flutter_inappwebview: ^5.7.2+3
   hive: ^2.2.3

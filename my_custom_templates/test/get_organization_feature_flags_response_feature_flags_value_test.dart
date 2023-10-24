@@ -20,7 +20,7 @@ void main() {
       expect(
           result, isA<GetOrganizationFeatureFlagsResponseFeatureFlagsValue>());
       expect(result.type, isNotNull);
-      expect(result?.type,
+      expect(result.type,
           isA<GetOrganizationFeatureFlagsResponseFeatureFlagsValueTypeEnum>());
       expect(
           result.type,

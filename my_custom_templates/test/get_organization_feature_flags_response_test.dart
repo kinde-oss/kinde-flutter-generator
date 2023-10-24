@@ -43,11 +43,11 @@ void main() {
               MapBuilder<String,
                   GetOrganizationFeatureFlagsResponseFeatureFlagsValue>>());
       MapBuilder<String, GetOrganizationFeatureFlagsResponseFeatureFlagsValue>
-          _mapBuilder = MapBuilder<String,
+          mapBuilder = MapBuilder<String,
               GetOrganizationFeatureFlagsResponseFeatureFlagsValue>();
-      _mapBuilder['flag1'] =
+      mapBuilder['flag1'] =
           GetOrganizationFeatureFlagsResponseFeatureFlagsValue();
-      instance.featureFlags = _mapBuilder;
+      instance.featureFlags = mapBuilder;
       final result = instance.build();
       expect(result, isA<GetOrganizationFeatureFlagsResponse>());
       expect(result.featureFlags?.length, isNonZero);

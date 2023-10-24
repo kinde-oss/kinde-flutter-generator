@@ -13,10 +13,10 @@ void main() {
       final subscriber = instance.subscriber;
       expect(
           subscriber, isA<CreateSubscriberSuccessResponseSubscriberBuilder>());
-      CreateSubscriberSuccessResponseSubscriberBuilder _subscriberBuilder =
+      CreateSubscriberSuccessResponseSubscriberBuilder subscriberBuilder =
           CreateSubscriberSuccessResponseSubscriberBuilder();
-      _subscriberBuilder.subscriberId = "subscriberId";
-      instance.subscriber = _subscriberBuilder;
+      subscriberBuilder.subscriberId = "subscriberId";
+      instance.subscriber = subscriberBuilder;
       final result = instance.build();
       expect(result, isA<CreateSubscriberSuccessResponse>());
       expect(result.subscriber?.subscriberId, isA<String?>());

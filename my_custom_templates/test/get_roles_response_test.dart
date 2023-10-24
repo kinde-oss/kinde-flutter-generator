@@ -42,8 +42,8 @@ void main() {
       final roles = instance.roles;
       expect(roles, isA<ListBuilder<Roles>>());
       expect(roles.length, isZero);
-      Roles _role = Roles();
-      instance.roles.add(_role);
+      Roles role = Roles();
+      instance.roles.add(role);
       final result = instance.build();
       expect(result, isA<GetRolesResponse>());
       expect(result.roles, isA<BuiltList<Roles>>());

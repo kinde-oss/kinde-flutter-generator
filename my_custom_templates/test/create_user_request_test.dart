@@ -13,11 +13,11 @@ void main() {
       // TODO
       final profile = instance.profile;
       expect(profile, isA<CreateUserRequestProfileBuilder>());
-      CreateUserRequestProfileBuilder _profileBuilder =
+      CreateUserRequestProfileBuilder profileBuilder =
           CreateUserRequestProfileBuilder();
-      _profileBuilder.familyName = 'familyName';
-      _profileBuilder.givenName = 'givenName';
-      instance.profile = _profileBuilder;
+      profileBuilder.familyName = 'familyName';
+      profileBuilder.givenName = 'givenName';
+      instance.profile = profileBuilder;
       final result = instance.build();
       expect(result, isA<CreateUserRequest>());
       expect(result.profile, isA<CreateUserRequestProfile?>());

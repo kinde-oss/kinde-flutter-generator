@@ -27,10 +27,10 @@ void main() {
       // TODO
       final details = instance.details;
       expect(details, isA<CreateUserRequestIdentitiesInnerDetailsBuilder>());
-      CreateUserRequestIdentitiesInnerDetailsBuilder _details =
+      CreateUserRequestIdentitiesInnerDetailsBuilder details0 =
           CreateUserRequestIdentitiesInnerDetailsBuilder();
-      _details.email = 'email';
-      instance.details = _details;
+      details0.email = 'email';
+      instance.details = details0;
       final result = instance.build();
       expect(result, isA<CreateUserRequestIdentitiesInner>());
       expect(result.details, isA<CreateUserRequestIdentitiesInnerDetails>());

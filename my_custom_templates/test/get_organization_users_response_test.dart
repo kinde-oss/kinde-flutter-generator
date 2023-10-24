@@ -39,8 +39,8 @@ void main() {
       // TODO
       final organizationUsers = instance.organizationUsers;
       expect(organizationUsers, isA<ListBuilder<OrganizationUser>>());
-      OrganizationUser _organizationUser = OrganizationUser();
-      instance.organizationUsers.add(_organizationUser);
+      OrganizationUser organizationUser = OrganizationUser();
+      instance.organizationUsers.add(organizationUser);
       final result = instance.build();
       expect(result.organizationUsers, isA<BuiltList<OrganizationUser>?>());
       expect(result.organizationUsers, isNotNull);

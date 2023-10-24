@@ -77,7 +77,7 @@ void main() {
       instance.roles.add('System-Admin');
       final result = instance.build();
       expect(result, isA<OrganizationUser>());
-      expect(result?.roles, isA<BuiltList<String>>());
+      expect(result.roles, isA<BuiltList<String>>());
       expect(result.roles, isNotNull);
       expect(result.roles?.length, equals(2));
       expect(result.roles, contains('Guest'));
