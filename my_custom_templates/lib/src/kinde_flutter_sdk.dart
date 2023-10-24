@@ -9,7 +9,7 @@ import 'package:flutter_appauth/flutter_appauth.dart';
 import 'package:flutter_custom_tabs/flutter_custom_tabs.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart'
-    as secure_store;
+as secure_store;
 import 'package:hive/hive.dart';
 import 'package:jose/jose.dart';
 import 'package:kinde_flutter_sdk/kinde_flutter_sdk.dart';
@@ -97,11 +97,11 @@ class KindeFlutterSDK with TokenUtils {
 
   static Future<void> initializeSDK(
       {required String authDomain,
-      required String authClientId,
-      required String loginRedirectUri,
-      required String logoutRedirectUri,
-      List<String> scopes = _defaultScopes,
-      String? audience}) async {
+        required String authClientId,
+        required String loginRedirectUri,
+        required String logoutRedirectUri,
+        List<String> scopes = _defaultScopes,
+        String? audience}) async {
     _config = AuthConfig(
         authDomain: authDomain,
         authClientId: authClientId,
@@ -111,13 +111,13 @@ class KindeFlutterSDK with TokenUtils {
         audience: audience);
 
     secure_store.FlutterSecureStorage secureStorage =
-        const secure_store.FlutterSecureStorage(
-            aOptions: secure_store.AndroidOptions());
+    const secure_store.FlutterSecureStorage(
+        aOptions: secure_store.AndroidOptions());
 
     Future<List<int>> getSecureKey(
         secure_store.FlutterSecureStorage secureStorage) async {
       var containsEncryptionKey =
-          await secureStorage.containsKey(key: 'encryptionKey');
+      await secureStorage.containsKey(key: 'encryptionKey');
       if (!containsEncryptionKey) {
         var key = Hive.generateSecureKey();
         await secureStorage.write(
@@ -155,8 +155,8 @@ class KindeFlutterSDK with TokenUtils {
 
   Future<String?> _redirectToKinde(
       {AuthFlowType? type,
-      String? orgCode,
-      Map<String, String> additionalParams = const {}}) async {
+        String? orgCode,
+        Map<String, String> additionalParams = const {}}) async {
     final params = HashMap<String, String>.from(additionalParams);
     if (orgCode != null) {
       params.putIfAbsent(_orgCodeParamName, () => orgCode);
@@ -205,6 +205,9 @@ class KindeFlutterSDK with TokenUtils {
     final version = await _getVersion();
     final versionParam = 'Flutter/$version';
     try {
+      if (authState?.refreshToken == null) {
+        throw KindeError("Session expired or invalid");
+      }
       final data = await _tokenApi.retrieveToken(
           versionParam,
           _store.authState!.createRequestTokenParam()
@@ -212,6 +215,8 @@ class KindeFlutterSDK with TokenUtils {
       _store.authState = AuthState.fromJson(data as Map<String, dynamic>);
       _kindeApi.setBearerAuth(_bearerAuth, _store.authState?.accessToken ?? '');
       return _store.authState?.accessToken;
+    } on KindeError catch (_) {
+      rethrow;
     } catch (ex) {
       return null;
     }
@@ -234,6 +239,9 @@ class KindeFlutterSDK with TokenUtils {
       ),
     )
         .then((value) {
+      if (additionalParams.containsKey(_orgNameParamName)) {
+        return additionalParams[_orgNameParamName];
+      }
       _saveState(value);
       return value?.accessToken;
     }).catchError((ex) {
@@ -266,6 +274,9 @@ class KindeFlutterSDK with TokenUtils {
           additionalParameters: additionalParams,
         ),
       );
+      if (additionalParams.containsKey(_orgNameParamName)) {
+        return additionalParams[_orgNameParamName];
+      }
       _saveState(token);
       return token?.accessToken ?? '';
     } catch (ex) {
@@ -302,7 +313,7 @@ class KindeFlutterSDK with TokenUtils {
         accessToken: tokenResponse?.accessToken,
         idToken: tokenResponse?.idToken,
         accessTokenExpirationDateTime:
-            tokenResponse?.accessTokenExpirationDateTime,
+        tokenResponse?.accessTokenExpirationDateTime,
         refreshToken: tokenResponse?.refreshToken,
         scope: tokenResponse?.scopes?.join(' '));
     _kindeApi.setBearerAuth(_bearerAuth, tokenResponse?.accessToken ?? '');
