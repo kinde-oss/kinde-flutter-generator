@@ -20,6 +20,8 @@ files:
     destinationFilename: lib/src/kinde_error.dart
   lib/src/kinde_flutter_sdk.dart:
     destinationFilename: lib/src/kinde_flutter_sdk.dart
+  lib/src/handle_network_error_mixin.dart:
+    destinationFilename: lib/src/handle_network_error_mixin.dart
   lib/src/keys/keys.dart:
     destinationFilename: lib/src/keys/keys.dart
   lib/src/keys/keys_api.dart:
