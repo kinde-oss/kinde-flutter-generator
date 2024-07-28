@@ -62,7 +62,7 @@ void main() {
     test('test updateUser', () async {
       // TODO
       final responseData = await instance.updateUser(
-          id: "test", updateUserRequest: UpdateUserRequest());
+          id: "test_user_id", updateUserRequest: UpdateUserRequest());
       expect(responseData, isNotNull);
     });
   });
