@@ -61,8 +61,8 @@ void main() {
     //Future<User> updateUser(UpdateUserRequest updateUserRequest, { String id }) async
     test('test updateUser', () async {
       // TODO
-      final responseData =
-          await instance.updateUser(updateUserRequest: UpdateUserRequest());
+      final responseData = await instance.updateUser(
+          id: "test", updateUserRequest: UpdateUserRequest());
       expect(responseData, isNotNull);
     });
   });
