@@ -13,15 +13,8 @@ class AuthUrlParams {
     this.connectionId,
   });
 
-  Map<String, String> toMap() {
-    final params = <String, String>{};
-    if (lang != null) {
-      params[_lang] = lang!;
-    }
-    if (connectionId != null) {
-      params[_connectionId] = connectionId!;
-    }
-
-    return params;
-  }
+  Map<String, String> toMap() => {
+        if (lang != null) _lang: lang!,
+        if (connectionId != null) _connectionId: connectionId!,
+      };
 }
