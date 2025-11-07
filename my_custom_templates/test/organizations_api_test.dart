@@ -31,7 +31,9 @@ void main() {
     test('test createOrganization', () async {
       // TODO
       final responseData = await instance.createOrganization(
-          createOrganizationRequest: CreateOrganizationRequest());
+        createOrganizationRequest:
+            CreateOrganizationRequest((b) => b..name = 'test_org_name'),
+      );
       expect(responseData, isNotNull);
     });
 
