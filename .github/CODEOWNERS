@@ -1,4 +1,5 @@
 # https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+* @kinde-oss/giants-kinde
 
 # ---------------------------------------------------------------------
 # DO NOT CHANGE THIS SECTION
@@ -9,3 +10,5 @@
 
 # ---------------------------------------------------------------------
 # Add specific owners here…
+build.gradle @kinde-oss/sdk-engineers
+**/build.gradle @kinde-oss/sdk-engineers
