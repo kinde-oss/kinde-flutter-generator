@@ -1,6 +1,7 @@
 library kinde_sdk;
 
 export './src/auth_config.dart';
+export './src/auth_url_params.dart';
 export './src/kinde_flutter_sdk.dart';
 export './src/model/auth_flow_type.dart';
 export './src/model/token_type.dart';
