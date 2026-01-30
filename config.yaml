@@ -2,10 +2,10 @@ apiTests: false
 modelTests: false
 templateDir: my_custom_templates
 files:
-  README.md: { }
-  LICENSE: { }
-  pubspec.yaml: { }
-  .gitignore: { }
+  README.md: {}
+  LICENSE: {}
+  pubspec.yaml: {}
+  .gitignore: {}
   analysis_options.yaml: {}
   CHANGELOG.md: {}
   lib/kinde_sdk.dart:
@@ -20,6 +20,8 @@ files:
     destinationFilename: lib/src/kinde_error.dart
   lib/src/kinde_flutter_sdk.dart:
     destinationFilename: lib/src/kinde_flutter_sdk.dart
+  lib/src/auth_url_params.dart:
+    destinationFilename: lib/src/auth_url_params.dart
   lib/src/handle_network_error_mixin.dart:
     destinationFilename: lib/src/handle_network_error_mixin.dart
   lib/src/keys/keys.dart:
