@@ -31,7 +31,7 @@ cd kinde-flutter-generator
 ### SDK generation
 To generate API please run:
 ```
-npx @openapitools/openapi-generator-cli generate -i https://kinde.com/api/kinde-mgmt-api-specs.yaml -g dart-dio --additional-properties=pubName=kinde_flutter_sdk -o kinde-flutter-sdk/ -c config.yaml --enable-post-process-file --global-property modelTests=false,apiTests=false
+npx @openapitools/openapi-generator-cli generate -i https://api-spec.kinde.com/kinde-combined-api-specs.yaml -g dart-dio --additional-properties=pubName=kinde_flutter_sdk -o kinde-flutter-sdk/ -c config.yaml --enable-post-process-file --global-property modelTests=false,apiTests=false
 ```
 ---
 
